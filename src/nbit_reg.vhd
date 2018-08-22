@@ -3,12 +3,12 @@ use ieee.std_logic_1164.all;
 
 entity nbit_reg is
     generic(    N       :   integer);
-    port(       clk     :   in std_logic,
-                rst     :   in std_logic,
-                wr      :   in std_logic,
-                din     :   in std_logic_vector((N - 1) downto 0),
+    port(       clk     :   in std_logic;
+                rst     :   in std_logic;
+                wr      :   in std_logic;
+                din     :   in std_logic_vector((N - 1) downto 0);
                 dout    :   out std_logic_vector((N - 1) downto 0));
-end entity
+end entity;
 
 architecture rtl of nbit_reg is
 begin
