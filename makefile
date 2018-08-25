@@ -19,8 +19,8 @@ WAVEFORM_VIEWER = gtkwave
 all: clean make run view
 
 compile:
-		@$(GHDL_CMD) -i $(GHDL_FLAGS) $(TESTBENCHPATH) $(FILES)
-		@$(GHDL_CMD) -m $(GHDL_FLAGS) $(TESTBENCHFILE)
+	@$(GHDL_CMD) -i $(GHDL_FLAGS) $(TESTBENCHPATH) $(FILES)
+	@$(GHDL_CMD) -m $(GHDL_FLAGS) $(TESTBENCHFILE)
 
 make:
 ifeq ($(strip $(TESTBENCH)), )
