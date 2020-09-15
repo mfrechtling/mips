@@ -32,7 +32,7 @@ begin
 			else
 				null;
 			end if;
-		end if
+		end if;
 	end process;
 
 end architecture;
