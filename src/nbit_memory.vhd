@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity nbit_memory.vhd is
+entity nbit_memory is
 	generic(	n		:	integer,
 				size	:	integer,
 				w		:	integer);
