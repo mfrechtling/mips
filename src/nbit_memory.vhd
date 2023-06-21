@@ -3,15 +3,15 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity nbit_memory is
-	generic(	n		:	integer,
-				size	:	integer,
+	generic(	n		:	integer;
+				size	:	integer;
 				w		:	integer);
-	port(		clk		:	in std_logic,
-				rst		:	in std_logic,
-				rd		:	in std_logic,
-				wr		:	in std_logic,
-				addr	:	in std_logic_vector((w - 1) downto 0),
-				din		:	in std_logic_vector((n - 1) downto 0),
+	port(		clk		:	in std_logic;
+				rst		:	in std_logic;
+				rd		:	in std_logic;
+				wr		:	in std_logic;
+				addr	:	in std_logic_vector((w - 1) downto 0);
+				din		:	in std_logic_vector((n - 1) downto 0);
 				dout	:	out std_logic_vector((n - 1) downto 0));
 end entity;
 
